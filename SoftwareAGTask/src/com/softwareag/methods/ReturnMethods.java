@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.EnumMap;
+import java.util.HashMap;
 import java.util.List;
 import java.util.logging.Logger;
 
@@ -162,5 +163,22 @@ public class ReturnMethods {
 		return ss;
 
 	}
-
+/*public HashMap<String, EnumMap<color, List<FruitsModel>>> groupByColor(EnumMap<color, List<FruitsModel>> map){
+	HashMap<String, EnumMap<color, List<FruitsModel>>> hm =new HashMap<>();
+	ArrayList<FruitsModel> ss = new ArrayList<>();
+	EnumMap<color, List<FruitsModel>> em =new EnumMap<>(color.class);
+	
+	map.forEach((k,v)->{
+		v.forEach((n)->{
+			if(n.getSize().equalsIgnoreCase("big"))
+				ss.add(n);
+			em.put(, ss);
+			hm.put("big", em);
+			
+				
+		});
+	});
+	return hm;
+	
+}*/
 }
